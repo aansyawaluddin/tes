@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="352dp"
+        android:layout_height="280dp"
+        android:background="@drawable/rectangle"
+        android:elevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/pfp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toTopOf="@id/rectangle"
+        app:layout_constraintStart_toStartOf="@id/rectangle"
+        app:layout_constraintEnd_toEndOf="@id/rectangle"
+        android:layout_marginTop="21dp"
+        android:elevation="31dp"
+        android:src="@mipmap/ic_launcher"
+        android:outlineProvider="none"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:fontFamily="@font/sf_ui_display_bold"
+        android:text="username"
+        app:layout_constraintTop_toBottomOf="@id/pfp"
+        app:layout_constraintStart_toStartOf="@id/pfp"
+        app:layout_constraintEnd_toEndOf="@id/pfp"
+        android:layout_marginTop="16dp"
+        android:elevation="31dp"
+        android:outlineProvider="none"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:textColor="@color/grey"
+        android:text="contohemail@dot.com"
+        app:layout_constraintTop_toBottomOf="@id/nama"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintEnd_toEndOf="@id/nama"
+        android:layout_marginTop="16dp"
+        android:elevation="31dp"
+        android:outlineProvider="none"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
